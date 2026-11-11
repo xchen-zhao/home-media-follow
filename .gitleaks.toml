@@ -1,0 +1,10 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+targetRules = ["generic-api-key"]
+description = "Verified raw source-module SHA256 digests; verify_release.py recalculates them"
+condition = "AND"
+paths = ['''(^|/)docs/verification\.json$''']
+regexTarget = "line"
+regexes = ['''^\s*"(?:service_auth\.py|baidu_auth\.py|secrets\.py)":\s*"[a-f0-9]{64}",?\s*$''']

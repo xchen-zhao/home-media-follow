@@ -1,0 +1,7 @@
+include README.md LICENSE LICENSE-DOCS THIRD_PARTY_NOTICES.md .gitleaks.toml
+recursive-include LICENSES *.txt
+recursive-include docs *.md *.json
+recursive-include examples *.json *.conf
+recursive-include tools *.py *.ps1
+recursive-include tests *.py
+recursive-exclude * __pycache__ *.py[cod]

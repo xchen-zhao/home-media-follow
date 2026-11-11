@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-11",
+  "version": "0.1.0a2",
+  "release_status": "sanitized_technical_preview_candidate",
+  "code_bundle_sha256": "0f64e0d9ac5a1762ce06495d9e6ae2e1b1eba55b52237f8b65df573893434b6f",
+  "modules": {
+    "__init__.py": "efc3b0445cdfb4eec667e31ddaf28b71b05b5f29db5bd9bbeadf144f7d254e13",
+    "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "baidu.py": "97ba9aa37345824d9a44a9f8670a12adffd5a4fd774ce7607ca77deb3fde5e1d",
+    "baidu_auth.py": "1d6870b564049e201650d7ad1d704809f8d2e339511024b4b18c9f9c663c456f",
+    "catalog.py": "b060d21336e069a4604d1cbba4163371261180b9c05c2fcd6de2eecd2b8b1825",
+    "cli.py": "4e8661bf4358b6c7c1b0390c42fdd3bcbb2c5034f6715e6486dd729e970459a6",
+    "cloud.py": "23c0f75924543a13401ec3c60cc9e1fa30df0bf5e81e940f2a464b53754f7227",
+    "configuration.py": "773f510380252141194d18f171bb1af9760bf4c679dfc6c8d10f229fea0a730a",
+    "core.py": "9b4b109813bff2f6a29dbc01e5cec6ca5d0880b4eaf197eaaf4cb73096000d0a",
+    "gateway.py": "c5799c7dcd2c06b688e0aae1ccac275405cd1a25a0a12792eff7edb13d556352",
+    "hook.py": "315e03a5faa42e22983d90d39837d316648109e035224e25de2d7877b7fb00a3",
+    "integrations.py": "cf9869cbe45984a338d3c6f356e14d350abe441bb514eed03b88ef2cbba8c12d",
+    "local_policy.py": "6219957fed01de13046df674ab6920e2cf3d3514a1ca312ff8af5a4d04fa69bf",
+    "probe.py": "bd3f1531380eff452555d4b96ef550fa631044e5ab4cc157a682f84c677ba462",
+    "publisher.py": "ac85f3ada1579a9a8d6961d2d1ba8edb54b44653aaf1c08e7b48dc17e1cbf5eb",
+    "quarantine.py": "6fecb340c5f370c9958386b4aa7ef8b92f8647912bbca40c97e046e05a0c6ff1",
+    "replacement.py": "2b30dbddeccaec71b1bd267ab632dcb9af075ca45fd0a33273567f28572c9726",
+    "runtime.py": "b918400d92a47f41285512f59ec0d4b1ee2636379e455e24a49453b98b213c35",
+    "secrets.py": "9604915440b7c6ba0d04034e7b175c4094365c90ba8f67ddbedda9d87c53466d",
+    "service_auth.py": "d59efbfbdadd3075e1b18c9217e74d34673e7def037272cdb31af70d649153b6",
+    "store.py": "852080f6e7d515ed2f8c7da1a22cb4fcc1c7613a50a253a972719da744adbc78",
+    "work_due.py": "7e5ff1a348c724d8e1b2ed8d72948a784a7d9b1231f616353c9bedfa8dca4b5e",
+    "worker.py": "d744171e880f2c7b5cc474d48d5b95461243475ca32e437c48ede195c7d7b150"
+  },
+  "tests": {
+    "macos": {
+      "python": "3.14.6",
+      "discovered": 299,
+      "passed": 296,
+      "skipped": 3,
+      "failures": 0
+    },
+    "windows": {
+      "python": "3.13.18",
+      "discovered": 299,
+      "passed": 295,
+      "skipped": 4,
+      "failures": 0
+    }
+  },
+  "independent_review": "No open code findings in reviewed scope; external acceptance remains incomplete",
+  "real_checks": {
+    "clean_windows_wheel_install": true,
+    "installed_modules_match": true,
+    "service_identity": "LOCAL SERVICE",
+    "actual_hourly_run": "2026-11-11T02:00:00+08:00",
+    "first_latest_episode": 2,
+    "next_episode": 3,
+    "watermark_preserved": 2,
+    "episode_1_not_downloaded": true,
+    "deleted_episode_2_not_refilled": true,
+    "new_episode_3_resolution": [
+      3840,
+      2160
+    ],
+    "episode_3_jellyfin_original_probe": true,
+    "variety_upper_lower_distinct_and_playable": true,
+    "negative_credential_identity": "NETWORK SERVICE",
+    "credential_read_denied": true,
+    "task_controls": {
+      "duplicate_install_refused": true,
+      "pause": true,
+      "resume": true,
+      "pause_after_test": true,
+      "definition_unchanged": true
+    },
+    "real_ntfs_junction_rejection": true
+  },
+  "cleanup": {
+    "cloud": {
+      "share_revoked": true,
+      "cloud_test_root_absent": true,
+      "only_verified_generated_subtree_removed": true,
+      "recycle_bin_purged": false,
+      "other_cloud_paths_touched": false
+    },
+    "windows": {
+      "owned_worker_tasks_uninstalled": [
+        "Worker",
+        "Candidate"
+      ],
+      "uninstall_preserved_test_media": true,
+      "owned_service_tasks_removed": [
+        "OpenList",
+        "Aria2",
+        "Jellyfin",
+        "Tests",
+        "DenyProbe"
+      ],
+      "test_ports_closed": {
+        "25244": true,
+        "26800": true,
+        "28096": true
+      },
+      "temporary_windows_root_removed": true,
+      "empty_test_drive_directory_removed": true,
+      "production_processes_targeted": false
+    }
+  },
+  "not_verified": [
+    "Successful real shared-source transfer for this public candidate (self-share request returned errno=2; cause not confirmed)",
+    "Full real cloud ownership/quality-upgrade transaction after successful transfer",
+    "Actual machine reboot, boot-trigger execution and reboot recovery",
+    "Fresh human QR login; existing authorized Windows session was reused"
+  ],
+  "boundary": "Shared-source scan and authenticated download tests reused generated files prepared by native same-account cloud copy; this is not successful share-transfer evidence.",
+  "production_sample_check": {
+    "configuration_and_publisher_hashes_unchanged": true,
+    "production_task_definition_unchanged": true,
+    "subscription_controls_unchanged": true,
+    "production_task_state": "Ready"
+  },
+  "secret_scan": {
+    "tool": "gitleaks 8.30.1",
+    "actual_secret_findings": 0,
+    "false_positives_reviewed": 3,
+    "false_positive_type": "raw SHA256 digests of service_auth.py, baidu_auth.py, secrets.py",
+    "allowlist_scope": "generic-api-key + verification.json + exact digest field line shape; verify_release recalculates source digests",
+    "allowlist_negative_control": true,
+    "git_history": "passed"
+  },
+  "code_bundle_method": {
+    "scope": "Immediate *.py files in src/home_media_follow; file names map to SHA256 of raw bytes",
+    "formula": "sha256(json.dumps(modules, sort_keys=True).encode(\"utf-8\"))",
+    "json_encoding": "Python default separators with spaces; sort_keys=True; UTF-8",
+    "excludes": [
+      "documentation",
+      "tests",
+      "task scripts",
+      "package metadata",
+      "whole distribution archive"
+    ]
+  },
+  "tested_candidate": {
+    "version": "0.1.0",
+    "code_bundle_sha256": "016016995ca2fd349f5fa2968d8e74fe298e4ce7941614952911b6aec9a08520",
+    "version_module_sha256": "ba40509da40815dfc1ee7a5a8dca11c1413099c451d45b45feed761f4ecc7f0c",
+    "scope": "Recorded ThinkPad and original two-platform results apply to the original candidate"
+  }
+}

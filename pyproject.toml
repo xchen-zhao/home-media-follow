@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "home-media-follow"
+version = "0.1.0a2"
+description = "Independent Windows home-media follow and recovery worker"
+requires-python = ">=3.13"
+license = "MIT AND Apache-2.0"
+license-files = ["LICENSE", "LICENSE-DOCS", "LICENSES/*.txt", "THIRD_PARTY_NOTICES.md"]
+readme = "README.md"
+classifiers = ["Operating System :: Microsoft :: Windows", "Programming Language :: Python :: 3.13"]
+
+[project.scripts]
+home-media-follow = "home_media_follow.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

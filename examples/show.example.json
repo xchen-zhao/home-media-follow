@@ -1,0 +1,14 @@
+{
+  "show_id": "example",
+  "title": "Example",
+  "media_kind": "tv",
+  "season": 1,
+  "episode_mode": "absolute",
+  "cloud_path": "/HomeMediaFollow/Example",
+  "source": {
+    "short_url": "REPLACE_WITH_LOCAL_PROPOSAL",
+    "source_root_id": "REPLACE_WITH_LOCAL_PROPOSAL",
+    "source_root": "/REPLACE_WITH_LOCAL_PROPOSAL",
+    "extraction_secret_ref": "example"
+  }
+}
